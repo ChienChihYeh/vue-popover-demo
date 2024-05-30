@@ -26,6 +26,9 @@ watchEffect(() => {
         class="popover-hover-trigger w-fit h-fit"
         @mouseenter="isHover = true"
         @mouseleave="isHover = false"
+        tabindex="0"
+        aria-haspopup="true"
+        :aria-expanded="isHover"
     >
         <slot></slot>
         <PopoverWrapper ref="popover" v-if="isHover">

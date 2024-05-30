@@ -5,11 +5,9 @@ const popoverDiv = ref()
 defineExpose({ popoverDiv })
 </script>
 <template>
-    <div popover="auto" ref="popoverDiv">
+    <div popover="auto" ref="popoverDiv" aria-live="polite" role="tooltip">
         <slot></slot>
     </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
