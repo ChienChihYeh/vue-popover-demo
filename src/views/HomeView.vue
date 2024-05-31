@@ -8,8 +8,14 @@ const myDescription =
 
 <template>
     <main>
-        <div class="h-screen flex flex-col items-start justify-center mx-5">
-            <h1 class="text-3xl mb-3">Hello There!</h1>
+        <div class="h-screen flex flex-col items-start justify-center mx-5 gap-3">
+            <h1 class="text-3xl">Hello There!</h1>
+            <PopoverHoverWrapper :title="myTitle" :description="myDescription">
+                <p class="p-3 border rounded-lg">Hover Here To Show Popover</p>
+            </PopoverHoverWrapper>
+            <PopoverHoverWrapper :title="myTitle" :description="myDescription">
+                <p class="p-3 border rounded-lg">Hover Here To Show Popover</p>
+            </PopoverHoverWrapper>
             <PopoverHoverWrapper :title="myTitle" :description="myDescription">
                 <p class="p-3 border rounded-lg">Hover Here To Show Popover</p>
             </PopoverHoverWrapper>
